@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_fixchinese"
+        android:text="@string/fix_chinese" />
+    
+    <Button 
+        android:layout_below="@id/cb_fixchinese"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_shortcut"
+        android:id="@+id/btn_addshortcut"
+        />
+    
+    <Button 
+        android:layout_below="@id/btn_addshortcut"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/del_shortcut"
+        android:id="@+id/btn_delshortcut"
+        />
+    
+	<Button 
+        android:layout_below="@id/btn_delshortcut"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_shortcut"
+        android:id="@+id/btn_checkshortcut"
+        />
+
+</RelativeLayout>
