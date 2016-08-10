@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<lint>
-    <issue id="DefaultLocale" severity="ignore">
-        <ignore path="src/com/klpchan/commonutils/simcard/SimCardUtils.java" />
-    </issue>
-    <issue id="InlinedApi" severity="ignore" />
-    <issue id="NewApi" severity="ignore" />
-    <issue id="SimpleDateFormat" severity="ignore" />
-</lint>
