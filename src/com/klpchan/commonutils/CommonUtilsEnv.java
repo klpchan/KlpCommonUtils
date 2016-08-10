@@ -27,11 +27,11 @@ public class CommonUtilsEnv {
      * The switcher for whether shortcut title is Chinese.
      * it used for only-chinese project, it create the shortcut title in chinese with any locale. 
      */
-    public static final boolean SWITCHER_SHORTCUT_CHINESE_ALWASY = true;
+    public static boolean SWITCHER_SHORTCUT_CHINESE_ALWASY = false;
     /**
      * The switcher for update verion for shortcut
      * True: it use packageName instead of appName to judge whether current shortcut exist or not.
      * False: it use appName
      */
-    public static final boolean SWITCHER_SHORTCUT_UPDATE= false;
+    public static final boolean SWITCHER_SHORTCUT_UPDATE= true;
 }

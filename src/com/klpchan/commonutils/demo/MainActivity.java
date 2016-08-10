@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 "Validation LocationUtil",/* 0 */
                 "Validation ShortCutUtil",/* 1 */
                 "Validation ScreenAttribute",/* 2 */
+                "Validation XutilsDataBase",/* 3 */
         };
 
         sdkFunctionalityList = (ListView) findViewById(R.id.Md_list_company);
@@ -101,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
             	break;
             case 2:
             	intent = new Intent(mContext, ScreenAttrDemoActivity.class);
+            	break;
+            case 3:
+            	intent = new Intent(mContext, XutilDBDemoActivity.class);
             	break;
             default:
             	break;

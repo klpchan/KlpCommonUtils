@@ -9,4 +9,9 @@
     <string name="add_shortcut">Add Shortcut</string>
     <string name="del_shortcut">Delete Shortcut</string>
     <string name="check_shortcut">Check If Shortcut Exist</string>
+    
+	<string name="add_db">AddToDB</string>
+    <string name="delete_db">DeleteDB</string>
+    <string name="update_db">ModifyDB</string>
+    <string name="query_db">QueryDB</string>  
 </resources>

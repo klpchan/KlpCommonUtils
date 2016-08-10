@@ -17,7 +17,7 @@ import com.klpchan.commonutils.CommonUtilsEnv;
  */
 public class LogUtil {
 
-    public static String customTagPrefix = "custom_tag";
+    public static String customTagPrefix = "Global_Roaming";
 
     private boolean DEBUG = false;
 //    private static String TAG = customTagPrefix;
@@ -36,7 +36,7 @@ public class LogUtil {
         if (Build.TYPE.equals("eng")){
             DEBUG = true;
         } else {
-            File file = new File(Environment.getExternalStorageDirectory() + "/log_enable_switcher");
+            File file = new File(Environment.getExternalStorageDirectory() + "/sroaming_log_enable");
             DEBUG = file.exists();
         }
     }
