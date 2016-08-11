@@ -19,6 +19,8 @@
     
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:name=".demo.MainApplication"
@@ -47,10 +49,14 @@
             android:name=".demo.ScreenAttrDemoActivity" 
             android:label="@string/app_name" >
         </activity>      
-        		<activity
+		<activity
             android:name=".demo.XutilDBDemoActivity" 
             android:label="@string/app_name" >
-        </activity>   
+        </activity>  
+		<activity
+            android:name=".demo.WebViewDemoActivity" 
+            android:label="@string/app_name" >
+        </activity>          
     </application>
 
 </manifest>

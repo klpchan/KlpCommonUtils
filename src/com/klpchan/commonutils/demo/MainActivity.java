@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 "Validation ShortCutUtil",/* 1 */
                 "Validation ScreenAttribute",/* 2 */
                 "Validation XutilsDataBase",/* 3 */
+                "Validation WebViewBase", /* 4 */
         };
 
         sdkFunctionalityList = (ListView) findViewById(R.id.Md_list_company);
@@ -106,6 +107,9 @@ public class MainActivity extends AppCompatActivity {
             case 3:
             	intent = new Intent(mContext, XutilDBDemoActivity.class);
             	break;
+            case 4:
+            	intent = new Intent(mContext, WebViewDemoActivity.class);
+            	break;	
             default:
             	break;
         }

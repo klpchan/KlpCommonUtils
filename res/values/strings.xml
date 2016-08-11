@@ -14,4 +14,10 @@
     <string name="delete_db">DeleteDB</string>
     <string name="update_db">ModifyDB</string>
     <string name="query_db">QueryDB</string>  
+    
+    <string name="network_error_retry">Network error, Please retry</string>  
+    <string name="no_network">No network</string>
+    <string name="loading">Loading</string>
+    <string name="retry">Retry</string>
+    <string name="in_progress">In Progress</string>
 </resources>

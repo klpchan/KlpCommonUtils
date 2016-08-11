@@ -94,14 +94,13 @@ public class XutilDBDemoActivity extends AppCompatActivity implements OnClickLis
             try {
                 parents = new ArrayList<Parent>();
 
-                for (int i = 0; i < 5; i++) {
+                for (int i = 0; i < 2; i++) {
                     parents.add(i, createParent());
 //                    db.save(parents.get(i));
 //                    db.saveBindingId(parents.get(i));
                 }
                 
                 db.saveBindingId(parents);
-                
             } catch (DbException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -113,23 +112,29 @@ public class XutilDBDemoActivity extends AppCompatActivity implements OnClickLis
 //                db.delete(parents.get((int) (count-1)));
                 List<Parent> queryList = db.findAll(Parent.class);
                 if (count >= 1) {
-                	
                     db.deleteById(Parent.class,queryList.get(queryList.size() - 1).getId());
                 }
             } catch (DbException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
-        } else if (id == R.id.btn_query) {  
-			try {
-				List<Parent> queryList = db.findAll(Parent.class);
-				mContent.setText(Arrays.toString(queryList.toArray()));
-			} catch (DbException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+        } else if (id == R.id.btn_update) {  
+			
+		}
+        
+        try {
+			doQueryDB();
+		} catch (DbException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
     }
+
+
+	private void doQueryDB() throws DbException {
+		List<Parent> queryList = db.findAll(Parent.class);
+		mContent.setText(Arrays.toString(queryList.toArray()));
+	}
 
 
     private Parent createParent() {
