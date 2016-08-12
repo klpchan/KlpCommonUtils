@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>活动详情</title>
+
+
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+<script  type ="text/javascript" >
+$( document ).ready(
+new function (){
+var _self =  this ;
+_self.width = 640; // 设置默认最大宽度 
+_self.fontSize = 100; // 默认字体大小 
+_self.widthProportion =  function (){ var p = (document.body&&document.body.clientWidth||document.getElementsByTagName("html")[0].offsetWidth)/_self.width;return p>1?1:p<0.5?0.5:p;};
+_self.changePage =  function (){
+document.getElementsByTagName("html")[0].setAttribute("style","font-size:"+_self.widthProportion()*_self.fontSize+"px !important");
+}
+_self.changePage();
+window.addEventListener('resize', function (){_self.changePage();}, false );
+}
+);
+</script>
+
+
+</head>
+
+<body>
+
+<div class="wrapper" align="center">
+     <div class="banner" >
+           <img src="img/banner.jpg">
+     </div>
+     <div class="contain" style="margin-bottom:1.20rem;">
+           <img src="img/title.png" style="width:4.62rem;margin-top:0.24rem;">
+           <div class="words">
+                <div style="padding-bottom:0.24rem">
+                 <p>1. 本活动适用于三星G9300和G9350用户，活动时间自服务上线之日起至2016年9月7日，在此有效期内，一台设备只可领取一次；</p>
+                 <p>2. 该套餐为1元全球1G流量体验包，所覆盖的国家或地区中有部分为试商用，仅提供1次的体验服务，以公开测试为目的，有可能出现服务异常情况，三星及/或合作公司会以最快速度响应和处理，敬请谅解。正式上线后将在 S 漫游应用程序中发布通知。详细信息请查看套餐详情；</p>
+                 <p>3. 成功登录后即可以1元订购全球7天1G流量体验包；</p>
+                 <p>4. 预订套餐后，请于7天内付款激活，否则订单将过期失效；</p>
+                 <p>5. 本活动由263移动通信提供。</p>
+                 
+                 </div>
+                   <img src="img/logo.png" style="width:1.52rem;float:right;margin-top:-0.08rem;" >
+                   <span style="float:right;display:block;margin-top:0.08rem;">特别鸣谢：</span>
+                 
+     </div>
+          
+     <div class="button" style="margin-top:1.00rem;">
+               
+               <a class="btn" id="action" onclick="window.SebHandlerInterface.tapPreOrderProduct('P263_1005422')">我要领取</a>
+               
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

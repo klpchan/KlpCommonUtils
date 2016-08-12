@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>活动详情</title>
+
+
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+<script  type ="text/javascript" >
+$( document ).ready(
+new function (){
+var _self =  this ;
+_self.width = 640; // 设置默认最大宽度 
+_self.fontSize = 100; // 默认字体大小 
+_self.widthProportion =  function (){ var p = (document.body&&document.body.clientWidth||document.getElementsByTagName("html")[0].offsetWidth)/_self.width;return p>1?1:p<0.5?0.5:p;};
+_self.changePage =  function (){
+document.getElementsByTagName("html")[0].setAttribute("style","font-size:"+_self.widthProportion()*_self.fontSize+"px !important");
+}
+_self.changePage();
+window.addEventListener('resize', function (){_self.changePage();}, false );
+}
+);
+</script>
+
+
+</head>
+
+<body>
+
+<div class="wrapper" align="center" style="background-color:#73d9ce;">
+     <div class="banner">
+           <img src="img/samsung2_top.jpg">
+     </div>
+     <div class="contain" style="height:6.70rem;margin-bottom:0.80rem;">
+           <img src="img/title.png" style="width:4.62rem;margin-top:0.24rem;">
+           <div class="words">
+                 <p>1. 本活动适用于三星G9300和G9350用户，活动时间自服务上线之日起至2016年9月7日，该特权在有效期内可重复使用；</p>
+                 <p>2. 成功登录后即可获得韩国7天1G套餐五折优惠特权；</p>
+                 <p>3. 预订套餐后，请于7天内在韩国境内付款激活，否则订单将过期失效；</p>
+                 <p>4. 本活动由263移动通信提供。</p>
+                 <img src="img/logo.png" style="width:1.52rem;float:right;margin-top:-0.08rem;" >
+                 <span style="float:right;">特别鸣谢：</span>
+                 
+           </div>
+           
+     </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

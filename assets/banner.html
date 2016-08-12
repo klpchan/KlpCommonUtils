@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>banner</title>
+
+
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<link rel="stylesheet"  href="demo/css/reset.css" />
+<link rel="stylesheet" href="demo/css/swiper.min.css">
+<script type="text/javascript" src="demo/js/jquery.min.js"></script>
+<script type="text/javascript" src="demo/js/swiper.min.js"></script>
+
+<script> 
+  $(document).ready(function() {
+	  var mySwiper  = new Swiper('.swiper-container',{
+		loop: true,
+		autoplay: 3000,
+		// 如果需要分页器
+		pagination: '.swiper-pagination',
+		paginationType : 'bullets'
+	});
+  });
+</script>
+
+<style>
+      html,body{bakcground-color:#fff;}
+	  img{width:100%;}
+</style>
+
+</head>
+
+<body>
+   
+<!--
+     <div style="width:100%;text-align:center;">
+     <a onclick="window.SebHandlerInterface.tapBanner(url,title)"><img src="demo/img/banner00.jpg"></a>
+     </div>
+-->
+     
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a onclick="window.SebHandlerInterface.tapBanner('demo/Page1.html','')"><img src="demo/img/banner0.jpg"></a></div>
+        <div class="swiper-slide"><a onclick="window.SebHandlerInterface.tapBanner('demo/Page2.html','')"><img src="demo/img/banner1.jpg"></a></div>
+        
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+
+    
+
+</div>
+
+</body>
+</html>

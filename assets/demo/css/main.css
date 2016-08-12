@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+img{
+  max-width:100%;	
+}
+
+html{
+  font-size:100px;
+}
+
+body{
+   font-size:.24rem;
+}
+
+
+div{
+    display: block;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    font-family: Microsoft YaHei,Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
+    color: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+	
+}
+
+
+.wrapper{
+    position: relative;
+    width:100%;
+   text-align:center;
+    max-width: 6.40rem;
+	min-width:3.20rem;
+    overflow: hidden;
+    margin:0 auto;
+	background-color:#c2deff;
+	
+}
+
+.banner img{
+    width:6.40rem;
+	height:auto;
+}
+
+.contain{
+	
+    width:6.00rem;
+	height:9.76rem;
+    background:rgba(255,255,255,0.4);
+	border-radius:6px;
+	margin:0 0.20rem;
+	
+}
+
+.contain .words{
+	padding:0.20rem;
+	text-align:left;
+    font-size:0.30rem;
+	color:#323232;
+
+}
+
+.contain .words p{
+    margin-bottom:0.24rem;
+}
+
+.button{
+    margin-top:0.42rem;
+}
+
+
+.btn {
+    display: block;
+    width: 3.14rem;
+    height: .82rem;
+    background-color: #bc062e;
+    border-radius: .06rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: .28rem;
+    line-height: .78rem;
+    text-align: center;
+    margin: -.20rem auto .20rem;
+    position: relative;
+    z-index: 0;
+}
+
+
+.btn:after {
+    content: '';
+    width: 3.14rem;
+    height: .78rem;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    z-index: -1;
+    background-color: #f00a3b;
+    border-radius: .06rem;
+}
+
+
+.btn1 {
+    display: none;
+    width: 2.14rem;
+    height: .82rem;
+    background-color: #f4f4f4;
+    border-radius: .06rem;
+    text-decoration: none;
+    color: #c6c6c6;
+    font-size: .24rem;
+    line-height: .78rem;
+    text-align: center;
+    margin: -.20rem auto .20rem;
+    position: relative;
+    z-index: 0;
+}
+
+.btn1:after {
+    content: '';
+    width: 2.14rem;
+    height: .78rem;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    z-index: -1;
+    background-color: #f4f4f4;
+    border-radius: .06rem;
+}
+
+
+
+
+
